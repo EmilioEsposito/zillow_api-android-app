@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="eesposit.cmu.edu.project4android.HousingValue">
+
+    <TextView
+        android:text="Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/addressLabel" />
+
+    <TextView
+        android:text="City, State, and Zip Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/citystatezipLabel"
+        android:layout_below="@+id/addressField"
+        android:layout_alignParentStart="true" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/citystatezipLabel"
+        android:layout_alignParentStart="true"
+        android:id="@+id/citystatezipField"
+        android:hint="e.g. Pittsbugh PA 15222" />
+
+    <Button
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submitbutton"
+        android:layout_below="@+id/citystatezipField"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Estimated House Value (Zillow's Zestimate)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/houseValueLabel"
+        android:layout_below="@+id/submitbutton"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/houseValueField"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/houseValueLabel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Neighborhood Avg House Value (Zillow's Zestimate)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neighborhoodValueLabel"
+        android:layout_below="@+id/houseValueField"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/neighborhoodValueField"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/neighborhoodValueLabel"
+        android:layout_toEndOf="@+id/houseValueField"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="% Above or Below Neighborhood Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percDiffLabel"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/neighborhoodValueField"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/percDiffField"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_below="@+id/percDiffLabel"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/addressField"
+        android:hint="e.g. 100 Smithfield St"
+        android:layout_below="@+id/addressLabel"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
